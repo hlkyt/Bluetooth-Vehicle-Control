@@ -1,0 +1,118 @@
+/*διαμόρφωση γραμματοσειράς κειμένων μέσα στο κυρίως σώμα */
+body {
+font-family: 'Fjalla One', sans-serif;
+font-weight: bold;
+}
+/*διαμόρφωση π΄ρωτης σελίδας εφαρμογής*/
+#mainPage a{
+    background-color: Transparent;
+    border:none;
+    outline: none;
+    text-align: center;
+    margin-top: 30%;
+}
+/* διαμόρφωση της λίστας*/
+ul {
+list-style: none;
+border-bottom: 1px solid #d3d3d3;
+text-align: center;
+font-family: 'Fjalla One', sans-serif;
+color:white;
+}
+/* διαμόρφωση των αποτελεσμάτων της λίστας*/
+li {
+margin-left: -40px;
+padding: 5px;
+padding-top: 10px;
+min-height: 50px;
+border-top: 1px solid #d3d3d3;
+font-size: 56px;
+}
+/* διαμόρφωση της εμφάνσνισης μηνυμάτων κάτω από τα αποτελέσματα της λίστας*/
+#statusDiv {
+text-align: center;
+margin-top: 29px;
+color:white;
+font: 56px;
+}
+
+.fadein {
+opacity: 1;
+-webkit-transition: opacity 1s ease-in;
+}
+
+.fadeout {
+opacity: 0;
+-webkit-transition: opacity 1s ease-out;
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+h1 {
+font-size: 1.6em;
+padding-top: 15px;
+}
+
+input[type=text] {
+font-size: 0.5em;
+}
+}
+/* διαμόρφωση σελίδας με πλήκτρα κίνησης */
+
+/*ρύθμιση εμφάνισης των εικονιδίων στη πρώτη σελίδα*/
+#detailPage input{
+  width: 100%;
+  height: 100%;
+}
+#detailPage #refreshButton{
+  width: 10%;
+  height: 10%;
+  margin-bottom: 0%;
+  /*margin-right: 12%;*/
+  border: none;
+  background-color: Transparent;
+  display: inline-block;
+  /*text-align: center;*/
+  outline: none;
+  position: relative;
+}
+#detailPage #ExitButton {
+  width: 10%;
+  height: 10%;
+  margin-left: 75%;
+  /*margin-right:5%;*/
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border: none;
+  background-color: Transparent;
+  display: inline-block;
+  text-align: right;
+  /*display:table-row-group;*/
+  outline: none;
+  position: relative;
+}
+
+/*ρύθμιση εμφάνισης τόξων στη δεύτερη σελίδα*/
+#buttonPage input{
+    width: 100%;
+    height: 100%;
+}
+#buttonPage {
+      text-align: center;
+      margin-top: 12%;
+      margin-bottom: 12%;
+      overflow:auto;
+      /*margin-bottom: 25%;*/
+
+}
+#buttonPage button{
+    width: 25%;
+    height: 25%;
+
+    margin-left:2%;margin-right: 2%;
+    border: none;
+    background-color: Transparent;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    position: relative;
+}
